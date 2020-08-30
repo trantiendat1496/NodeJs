@@ -17,7 +17,7 @@ var homeRoute = require('./routes/home.route');
 var authMiddleware = require('./middlewares/auth.middleware');
 var sessionMiddleware = require('./middlewares/session.middleware');
 
-var port = 30;
+var port = process.env.PORT || 30;
 
 var app = express();
 app.set('view engine', 'pug');
